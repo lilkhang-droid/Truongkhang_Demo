@@ -1,0 +1,27 @@
+name: Hello world #khoitaokichban
+
+on:
+  push::
+    branches:[ "main" ]
+
+jobs:
+  thuc_hanh_doc_file:
+    runs-on: unbutu-lastet #MƯỢN MÁY Ảoutputs:
+      
+
+    steps:
+      - name: bước 1 - Xin chào
+        run: echo"HELLO WORLD" #lệnh in ra màn hình
+
+      - name: bước 2 - Tải code
+        uses: actions/checkout@v6 # Robot tự đọng code vào máy ảo
+
+      - name: bước 3 - đọc file
+        run: cat README.md #mở nội dung file
+
+      
+
+
+
+
+
